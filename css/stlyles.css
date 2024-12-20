@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #DFDFDF;
+         
+}
+ul{
+    list-style: none;
+}
+
+#app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 35rem;
+    
+}
+#app main {
+    padding-bottom: 41rem;
+}
+#app header{
+    height: 343px;
+    background: #000;
+    color: white;
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+ 
+}
+#app header h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+
+}
+
+#app form input:invalid{
+   border: 1px solid red;
+}
+
+form {
+    background: #fff;
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 34vw;
+    padding: 2rem;
+    top: 20vh;
+    gap: 0.5rem;
+    border-radius: 10px;
+   
+    
+}
+
+form h3{
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+form #horizontalRow{
+    height: 1px;
+    width: 90%;
+    background: #79747470;
+    margin: 1rem auto;
+}
+
+form label {
+    font-size: 21px;
+    color: rgba(30, 30, 30, 0.41);
+    font-weight:bold;
+    margin-bottom: 1px;
+}
+form label > span {
+     font-size: 14px;
+     font-weight: lighter;
+}
+
+form input,button {
+    width: 525px;
+    height: 54px;
+    border: 0.1px solid rgba(0, 0, 0, 0.41);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.247);
+    padding: 0px 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+form input:focus{
+    outline: none;
+}
+form #eventInfo{
+    padding-left: 1rem;
+    width: 525px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.247);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 0.1px solid rgba(0, 0, 0, 0.41);
+}
+
+form #eventInfo:focus{
+    outline: none !important;
+}
+
+form #dropdown #eventCategory {
+    width: 525px;
+    height: 54px;
+    text-align: left;
+    padding: 16px;
+    background: #fff;
+    
+}
+
+form #dropdown #eventCategory:focus{
+    outline: none;
+}
+
+
+
+
+form #preventoEvent{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+   outline: none;
+}
+
+form .checkboxContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+form .checkboxContainer span{
+    font-size: 21px;
+    color: rgba(30, 30, 30, 0.41);
+    font-weight: bold;
+}
+
+form #dataContainer{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+form #submitBtn{
+    border: none;
+    background-color: rgba(92, 255, 78, 1);
+    color : #fff;
+    font-weight: bolder;
+    margin: 10px auto;
+}
+
+form #submitBtn:hover{
+    background-color: rgba(92, 255, 78, 0.8);
+    cursor: pointer;
+    
+}

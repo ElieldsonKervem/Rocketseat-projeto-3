@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stlyles.css">
+    <title>Formulario Modulo 3</title>
+</head>
+<body>
+    
+<div id="app">
+    
+    <header>
+        <h1>Crie e compartilhe seus eventos</h1>
+        <h2>Crie e compartilhe seus eventos</h2>
+    </header>
+     
+    <!--get e post são usados para receber e enviar documentos-->
+    <main>
+        <form action="myform"  >
+             <h3>Informações do evento</h3>
+             <div id="horizontalRow"></div>
+              
+             <label for="eventName">
+                Titulo do evento
+                <span>( No minimo 8 caracteres )</span>
+             </label>
+             <input type="text" id="eventName" name="eventName" required>
+
+             <label for="linkEvent">
+                Link do evento
+                <span>( No minimo 8 caracteres )</span>
+             </label>
+             <input type="email" id="linkEvent" name="linkEvent" required>
+
+             
+             <label for="whatssapEvent">
+                Whatssap do evento
+                <span>( No minimo 8 caracteres )</span>
+             </label>
+             <input type="tel" id="whatssapEvent" name="whatssapEvent" required>
+
+             <label for="eventInfo">
+                Informações sobre o evento
+             </label>
+            
+             <textarea rows="12" name="eventInfo" id="eventInfo">
+               
+             </textarea>
+               
+             <label for="eventCategory">
+                Categoria do evento
+             </label>
+              
+             <!--area mais complicada do codigo-->
+             <div id="dropdown">
+                <select name="eventCategory" id="eventCategory">
+                    <option value="Reunião">Reunião</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="mentoria">Mentoria</option>
+                  </select>
+             </div>
+
+             <label for="eventEmailCreator">
+                Email do criador do evento 
+                <span>Formato do email deve ser valido</span>
+             </label>
+             <input type="text" id="eventEmailCreator" name="eventEmailCreator" required>
+
+             <label for="eventPassword">
+                Senha do evento 
+                <span> ( Numeros e caracters )</span>
+             </label>
+             <input type="password" id="eventPassword" name="eventPassword" required>
+
+             <div class="checkboxContainer">
+               <input type="checkbox" name="privateEvent" id="preventoEvent">
+               <span>Evento é privado ?</span>
+             </div>
+              
+             <label for="eventData">
+                Data do evento
+             </label>
+             <div id="dataContainer">
+                <input type="date">
+                <input type="time">
+             </div>
+             
+            <button type="submit" id="submitBtn" form="myform">Salvar evento</button>               
+        </form>
+    </main>
+
+</div>
+
+</body>
+</html>
